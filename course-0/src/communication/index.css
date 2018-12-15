@@ -1,0 +1,41 @@
+.grandapa div {
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #fff;
+}
+.grandapa .from {
+  color: red;
+}
+.grandapa .msg {
+  color: green;
+}
+.grandapa {
+  background-color:#7f7272;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 300px;
+}
+.father {
+  background-color:#7070d6;  
+}
+
+.children {
+  width: 100%;
+  display: flex;
+}
+.my,.brother {
+  background-color:#2ad1a5;  
+  float: left;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.my a {
+  margin-right: 20px;
+}
+.my span {
+  margin-right: 10px
+}

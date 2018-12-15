@@ -1,0 +1,27 @@
+#index {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  border: 1px solid #ddd;
+}
+ul li {
+  padding : 4px; 
+  border: 1px solid #aaa;
+  border-bottom: 0px;
+  background-color: #fff;
+}
+ul li.last {
+  border : 1px solid #aaa;
+}
+.input input {
+  width: 330px;
+  height: 30px;
+}
+.input button {
+  height: 35px;
+  width: 100px;
+}
