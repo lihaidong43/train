@@ -13,7 +13,11 @@ export default class List extends React.Component {
   render(){
     const {todos } = this.props
     return todos.length > 0  && (<ul>
-        {todos.map((todo,index) => <li key={index} className={index+1 === todos.length ? 'last' : ''}>{todo}</li>)}
+        {todos.map((todo,index) => 
+          <li key={index} className={index+1 === todos.length ? 'last' : ''}>
+            {/* <input type='checkbox'/> */}
+            {todo}
+          </li>)}
       </ul> || null
     )
   }

@@ -10,7 +10,7 @@ chai.use(sinonChai);
 configure({ adapter: new Adapter() });
 
 describe('<Input/>', () => {
-  it('should render',() => {
+  it('should render and call add least once',() => {
     const spy =  sinon.spy()
     const wrapper = shallow(<Input add={spy}/>);
     const input = wrapper.find('input')

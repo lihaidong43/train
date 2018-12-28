@@ -21,7 +21,7 @@ export default class My extends React.Component {
   render(){
     return <div className='my'>
     <span>
-      <span>My want to seed a msg <input type='input' size='20' ref='msg'/> to</span>
+      <span>I want to seed a msg <input type='input' size='20' ref='msg'/> to</span>
       <a href='javascript:void(0)' onClick={(e)=> this.call('son','father')}>father</a>
       <a href='javascript:void(0)' onClick={(e)=> this.call('grandason','grandapa')}>grandapa</a>
       <a href='javascript:void(0)' onClick={(e)=> this.call('brother','brother')}>brother</a>
