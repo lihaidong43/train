@@ -10,13 +10,20 @@ export default class List extends React.Component {
     todos : []
   }
 
+  done = (e) => {
+    const target = e.target;
+    if(target.value === 'on'){
+      target.parentNode.style.textDecoration = 'line-through'
+    }
+  }
+
   render(){
     const {todos } = this.props
     return todos.length > 0  && (<ul>
         {todos.map((todo,index) => 
           <li key={index} className={index+1 === todos.length ? 'last' : ''}>
             {/* <input type='checkbox'/> */}
-            {todo}
+            <input type = 'checkbox' className='done' onChange={(e) => this.done(e)}/>{todo}
           </li>)}
       </ul> || null
     )
